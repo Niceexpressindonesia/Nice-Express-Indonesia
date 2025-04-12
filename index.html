@@ -35,9 +35,34 @@
       padding: 20px;
       text-align: center;
     }
+    .navbar-custom {
+      background-color: #8B0000;
+    }
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-brand {
+      color: white;
+    }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nice Express</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cek-ongkir">Cek Ongkir</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cara-kirim">Cara Kirim</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
   <section class="hero">
     <h1 class="display-4">Kirim Barang ke Seluruh Dunia</h1>
@@ -52,28 +77,28 @@
     <div class="row text-center features">
       <div class="col-md-3">
         <div class="card p-3">
-          <div>📦</div>
+          <img src="https://source.unsplash.com/200x150/?package" class="img-fluid mb-3" alt="Packing">
           <h5>Packing & Konsolidasi</h5>
           <p>Kami bantu packing & kumpulkan barang dari berbagai toko online.</p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="card p-3">
-          <div>🌍</div>
+          <img src="https://source.unsplash.com/200x150/?world" class="img-fluid mb-3" alt="Kirim Global">
           <h5>Kirim Global</h5>
           <p>Korea, Jepang, Dubai, hingga seluruh dunia. Semua bisa!</p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="card p-3">
-          <div>💸</div>
+          <img src="https://source.unsplash.com/200x150/?money" class="img-fluid mb-3" alt="Harga Terjangkau">
           <h5>Harga Terjangkau</h5>
           <p>Cek ongkir transparan, tanpa biaya tersembunyi.</p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="card p-3">
-          <div>🛒</div>
+          <img src="https://source.unsplash.com/200x150/?shopping" class="img-fluid mb-3" alt="Belanja Marketplace">
           <h5>Belanja Marketplace</h5>
           <p>Kami bantu urus pengiriman barang dari Shopee, Tokopedia, dll.</p>
         </div>
@@ -98,11 +123,16 @@
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer id="contact">
     <p>© 2025 Nice Express Indonesia. All rights reserved.</p>
-    <p>Hubungi kami di <a href="mailto:cs@niceexpress.id" class="text-white">cs@niceexpress.id</a> | WA: +62 812-0000-0000</p>
+    <p>Hubungi kami di <a href="mailto:WA: +62 811-1201-2930" class="text-white">WA: +62 811-1201-2930</p>
     <p>Instagram: @niceexpress.indonesia | TikTok: @niceexpress.indonesia</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
 </body>
 </html>
 
